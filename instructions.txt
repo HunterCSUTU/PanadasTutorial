@@ -1,0 +1,155 @@
+Part 4 — Accessing Data
+Tasks
+
+Write code to:
+
+Select only the Student column
+Select Student and Grade
+Get the first row using iloc
+Get the row with label 2 using loc
+Challenge
+
+Retrieve only the Major value for Sophia.
+
+Part 5 — Filtering Data
+Tasks
+
+Write code to:
+
+Find students older than 20
+Find students with grades above 90
+Find Physics majors
+Find students who:
+are older than 20
+AND have grades above 90
+Advanced Filtering
+
+Write code to:
+
+Find students whose names start with "A"
+Find students majoring in:
+Math
+Physics
+Exclude Biology majors
+Practice Concepts
+&
+|
+isin()
+str.startswith()
+~
+Part 6 — CRUD Operations
+✅ Create
+
+Add this new student:
+
+{
+    'Student': 'Mason',
+    'Age': 23,
+    'Major': 'Chemistry',
+    'Grade': 87,
+    'Graduated': False
+}
+🕵️ Read
+
+Write code to:
+
+Find Emma’s row
+Get the 4th row using iloc
+✏️ Update
+
+Write code to:
+
+Change Ava’s grade to 91
+Convert all majors to uppercase
+Increase every student’s grade by 5 points
+❌ Delete
+
+Write code to:
+
+Remove the row for Olivia
+Remove the Graduated column
+Remove students with grades below 85
+Part 7 — Cleaning Data
+
+Use this new DataFrame:
+
+dirty_data = {
+    'Student': ['Emma', 'Liam', None, 'Noah'],
+    'Age': [20, None, 19, 22],
+    'Major': ['Math', 'Physics', 'Biology', None],
+    'Grade': [88, 92, None, 95]
+}
+
+dirty_df = pd.DataFrame(dirty_data)
+Tasks
+
+Write code to:
+
+Count missing values
+Remove rows with missing values
+Fill missing ages with 0
+Fill missing majors with "Unknown"
+Rename Grade to Score
+Convert Score to float
+Part 8 — Data Analysis
+Tasks
+
+Write code to:
+
+Count how many students are in each major
+Find the average grade per major
+Sort students by grade descending
+Find the highest grade
+Find the lowest age
+Find the average age of all students
+Bonus
+
+Find:
+
+the top 3 students by grade
+the average grade of graduated students only
+Part 9 — Mini Challenges
+Challenge 1
+
+Create a new column called Passed.
+
+Rules:
+
+Grade >= 85 → True
+Otherwise → False
+Challenge 2
+
+Create a column called Age_Group.
+
+Rules:
+
+Under 21 → "Young"
+21 and older → "Adult"
+Challenge 3
+
+Find all students who:
+
+passed
+AND are Math majors
+Part 10 — Final Challenge
+
+Using everything you've learned:
+
+Create a report that:
+Removes missing data
+Adds a Passed column
+Converts majors to uppercase
+Sorts by grade descending
+Saves the cleaned results to:
+final_report.csv
+Extra Practice Ideas
+
+Try these on your own:
+
+Add random missing values
+Merge two DataFrames
+Practice joins
+Use apply()
+Create charts with pandas
+Export filtered results
+Practice groupby() with multiple columns
